@@ -1,0 +1,263 @@
+html, body, figure, h2, h3, h1 {
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 20;
+}
+
+header div {
+  margin: 0 auto;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div h1 {
+  font-size: 1.5rem;
+}
+
+header div h1 a {
+  color: blue;
+}
+
+header div h1 a img {
+  vertical-align: middle;
+}
+
+header div nav {
+  width: 50%;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 0.8rem;
+}
+
+header div .lang {
+  margin-left: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header div .lang li a {
+  color: #999;
+}
+
+header div .lang li a.active {
+  color: #000;
+}
+
+header div .lang li:nth-of-type(1)::after {
+  content: '|';
+  margin: 1rem;
+  color: #999;
+}
+
+main .wrapper-vid {
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+}
+
+main .gradient-bg {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0.25)), color-stop(50%, rgba(255, 255, 255, 0.5)), color-stop(75%, rgba(255, 255, 255, 0.75)), to(white));
+  background: linear-gradient(to top, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0.25) 25%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.75) 75%, white 100%);
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
+
+main .bg-vid {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+
+main .toss-word {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 9;
+  white-space: pre-line;
+  text-align: center;
+  font-size: 3.4rem;
+}
+
+main .download {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+}
+
+main .download ul li {
+  display: none;
+}
+
+main .download .btn-dwnld {
+  width: 25vh;
+  height: 10vh;
+  border-radius: 5vh;
+  border: none;
+  background-color: blue;
+  color: #fff;
+  font-size: 1.3rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .download .btn-dwnld:hover {
+  background-color: #000064;
+}
+
+main .move-page {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(90deg);
+          transform: translateX(-50%) rotate(90deg);
+  border: none;
+  background: none;
+  font-size: 2rem;
+}
+
+main .cont-1 {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fafafa;
+}
+
+main .cont-1 h2 {
+  margin-top: 10vh;
+  width: 80%;
+  line-height: 3.5rem;
+  font-size: 1.6rem;
+  white-space: pre-line;
+}
+
+main .cont-2 {
+  position: absolute;
+  top: 180vh;
+  height: 180vh;
+}
+
+main .cont-2 .main-2 {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+main .cont-2 .main-2 .main-2-1 {
+  text-align: left;
+  white-space: pre-line;
+  font-size: 3rem;
+}
+
+main .cont-2 .main-2 .main-2-1 small {
+  color: blue;
+  display: inline-block;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+
+main .cont-2 .main-2 .main-2-2 {
+  width: 55%;
+  background: url("img/section1_1_home_02.png") no-repeat center center;
+  background-size: 60%;
+  -webkit-transform: translate(-20%, 0);
+          transform: translate(-20%, 0);
+}
+
+main .cont-2 .main-2 .main-2-2 img {
+  width: 100%;
+}
+
+main .cont-2 .main-2 .main-2-3 {
+  width: 55%;
+  background: url("img/section1_1_home_01.png") no-repeat center center;
+  background-size: 60%;
+  -webkit-transform: translate(20%, 0%);
+          transform: translate(20%, 0%);
+  position: absolute;
+  top: -10%;
+  right: 0%;
+}
+
+main .cont-2 .main-2 .main-2-3 img {
+  width: 100%;
+  -webkit-transform: translateY(29%);
+          transform: translateY(29%);
+}
+
+main .cont-2 .main-2 .main-2-3 div {
+  font-size: 1.3rem;
+  width: 80%;
+  margin-top: 30vh;
+  margin-left: 10vh;
+  white-space: pre-line;
+}
+/*# sourceMappingURL=index.css.map */
