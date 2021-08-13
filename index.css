@@ -179,30 +179,21 @@ main .cont-1 {
   top: 100%;
   width: 100%;
   height: 80vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #fafafa;
 }
 
 main .cont-1 h2 {
-  margin-top: 10vh;
-  width: 80%;
+  margin-top: 20vh;
   line-height: 3.5rem;
   font-size: 1.6rem;
   white-space: pre-line;
+  text-align: center;
 }
 
 main .cont-2 {
   position: absolute;
   top: 180vh;
-  height: 180vh;
+  height: 190vh;
 }
 
 main .cont-2 .main-2 {
@@ -212,6 +203,7 @@ main .cont-2 .main-2 {
 }
 
 main .cont-2 .main-2 .main-2-1 {
+  margin-top: 20vh;
   text-align: left;
   white-space: pre-line;
   font-size: 3rem;
@@ -249,8 +241,8 @@ main .cont-2 .main-2 .main-2-3 {
 
 main .cont-2 .main-2 .main-2-3 img {
   width: 100%;
-  -webkit-transform: translateY(29%);
-          transform: translateY(29%);
+  -webkit-transform: translateY(24%);
+          transform: translateY(24%);
 }
 
 main .cont-2 .main-2 .main-2-3 div {
@@ -259,5 +251,309 @@ main .cont-2 .main-2 .main-2-3 div {
   margin-top: 30vh;
   margin-left: 10vh;
   white-space: pre-line;
+}
+
+main .cont-3 {
+  position: absolute;
+  top: 370vh;
+  width: 100%;
+  height: 200vh;
+  background: #fafafa;
+}
+
+main .cont-3 .main-3 {
+  margin-top: 20vh;
+  margin-left: 5%;
+}
+
+main .cont-3 .main-3 h2 {
+  white-space: pre-line;
+  font-size: 2.5rem;
+}
+
+main .cont-3 .main-3 h2 small {
+  color: blue;
+}
+
+main .cont-3 .main-3 .main-3-1 {
+  width: 70%;
+  height: 50vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .cont-3 .main-3 .main-3-1 .transfer-1 {
+  width: 70%;
+  background: url("img/section1_2_transfer_01.png") no-repeat center center;
+  background-size: 70%;
+  background-position-y: -20%;
+  overflow: hidden;
+}
+
+main .cont-3 .main-3 .main-3-1 .transfer-1 img {
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
+  width: 120%;
+}
+
+main .cont-3 .main-3 .main-3-1 p {
+  vertical-align: middle;
+  white-space: pre-line;
+}
+
+main .cont-3 .main-3 .main-3-1 p .call {
+  display: inline;
+  color: green;
+}
+
+main .cont-3 .main-3 .main-3-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .cont-3 .main-3 .main-3-2 .main-3-2-1 {
+  width: 30%;
+  background: #000;
+  color: #ccc;
+}
+
+main .cont-3 .main-3 .main-3-2 .main-3-2-1 p {
+  white-space: pre-line;
+}
+
+main .cont-3 .main-3 .main-3-2 .main-3-2-1 p .white-font {
+  color: white;
+}
+
+main .cont-3 .main-3 .main-3-2 .main-3-2-2 {
+  background: #fff;
+  width: 70%;
+}
+
+main .cont-3 .main-3 .main-3-2 .main-3-2-2 .main-3-2-2-1 {
+  height: 30vh;
+  overflow: hidden;
+  text-align: right;
+}
+
+main .cont-3 .main-3 .main-3-2 .main-3-2-2 .main-3-2-2-1 img {
+  width: 60%;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+}
+
+main .cont-3 .main-3 .main-3-2 .main-3-2-2 p {
+  white-space: pre-line;
+  padding: 5vh;
+}
+
+main .cont-3 .main-3 .main-3-2 .main-3-2-2 p .clock {
+  color: blue;
+}
+
+main .cont-4 {
+  position: absolute;
+  top: 570vh;
+  right: 0;
+  width: 100%;
+  height: 250vh;
+}
+
+main .cont-4 .main-4-1 h2 {
+  margin-top: 30vh;
+  margin-left: 5vh;
+  white-space: pre-line;
+  font-size: 2rem;
+}
+
+main .cont-4 .main-4-1 h2 small {
+  color: blue;
+}
+
+main .cont-4 .main-4-1 .main-4-1-cont {
+  position: relative;
+}
+
+main .cont-4 .main-4-1 .main-4-1-cont .invest-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .cont-4 .main-4-1 .main-4-1-cont .invest-text p {
+  width: 30%;
+}
+
+main .cont-4 .main-4-1 .main-4-1-cont div:nth-of-type(2) {
+  position: absolute;
+  left: 50%;
+  top: -20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 40%;
+  background: url("img/section1_5_stock_01.png") center center no-repeat;
+  background-size: 50%;
+}
+
+main .cont-4 .main-4-1 .main-4-1-cont div:nth-of-type(2) img {
+  position: relative;
+  width: 100%;
+  z-index: 30;
+}
+
+main .cont-4 .main-4-1 .main-4-1-cont div:nth-of-type(2) figure {
+  position: absolute;
+  left: -75%;
+  top: 65%;
+  width: 120vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 20;
+}
+
+main .cont-4 .main-4-1 .main-4-1-cont div:nth-of-type(2) figure img {
+  width: 178px;
+  margin-left: 2vh;
+}
+
+main .cont-4 .main-4-1 p {
+  margin: 130vh auto 10vh;
+  white-space: pre-line;
+  text-align: center;
+}
+
+main .cont-4 .main-4-2 {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(img/section2_4_big.jpg) center center no-repeat;
+  background-size: 120%;
+}
+
+main .cont-4 .main-4-2 h2 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+main .cont-5 {
+  position: absolute;
+  top: 820vh;
+  width: 100%;
+  height: 300vh;
+  background: #eee;
+}
+
+main .cont-5 .main-5 h2 {
+  width: 80%;
+  margin: 0 auto;
+  white-space: pre-line;
+}
+
+main .cont-5 .main-5 h2 small {
+  color: blue;
+}
+
+main .cont-5 .main-5 .table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .cont-5 .main-5 .table div {
+  width: 50%;
+}
+
+main .cont-5 .main-5 .table div span svg {
+  width: 60px;
+  height: 60px;
+}
+
+footer {
+  background-color: #191f28;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 1120vh;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer .footer-cont {
+  width: 80%;
+  margin: 5vh auto;
+}
+
+footer .footer-cont div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5vh;
+}
+
+footer .footer-cont div ul li {
+  padding: 1vh;
+}
+
+footer .footer-cont address {
+  white-space: pre-line;
+  margin-bottom: 5vh;
+}
+
+footer .footer-cont address small {
+  margin-bottom: 1vh;
+}
+
+footer .footer-cont .term {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5vh;
+}
+
+footer .footer-cont .sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-cont .sns li {
+  margin: 1vh;
 }
 /*# sourceMappingURL=index.css.map */
