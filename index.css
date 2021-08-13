@@ -21,7 +21,7 @@ header {
   position: fixed;
   background-color: #fff;
   width: 100%;
-  height: 10vh;
+  height: 4.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,7 +101,7 @@ main .gradient-bg {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0.25)), color-stop(50%, rgba(255, 255, 255, 0.5)), color-stop(75%, rgba(255, 255, 255, 0.75)), to(white));
   background: linear-gradient(to top, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0.25) 25%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.75) 75%, white 100%);
   width: 100%;
-  height: 100vh;
+  height: 60vw;
   min-height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -115,7 +115,7 @@ main .bg-vid {
   top: 0;
   z-index: -1;
   width: 100%;
-  height: 100vh;
+  height: 60vw;
   min-height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -136,7 +136,7 @@ main .toss-word {
 
 main .download {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -148,9 +148,9 @@ main .download ul li {
 }
 
 main .download .btn-dwnld {
-  width: 25vh;
-  height: 10vh;
-  border-radius: 5vh;
+  width: 15vw;
+  height: 6vw;
+  border-radius: 3vw;
   border: none;
   background-color: blue;
   color: #fff;
@@ -178,12 +178,12 @@ main .cont-1 {
   position: absolute;
   top: 100%;
   width: 100%;
-  height: 80vh;
+  height: 48vw;
   background-color: #fafafa;
 }
 
 main .cont-1 h2 {
-  margin-top: 20vh;
+  margin-top: 12vw;
   line-height: 3.5rem;
   font-size: 1.6rem;
   white-space: pre-line;
@@ -192,8 +192,9 @@ main .cont-1 h2 {
 
 main .cont-2 {
   position: absolute;
-  top: 180vh;
-  height: 190vh;
+  top: 107vw;
+  height: 114vw;
+  width: 100%;
 }
 
 main .cont-2 .main-2 {
@@ -203,7 +204,7 @@ main .cont-2 .main-2 {
 }
 
 main .cont-2 .main-2 .main-2-1 {
-  margin-top: 20vh;
+  margin-top: 10vw;
   text-align: left;
   white-space: pre-line;
   font-size: 3rem;
@@ -231,7 +232,7 @@ main .cont-2 .main-2 .main-2-2 img {
 main .cont-2 .main-2 .main-2-3 {
   width: 55%;
   background: url("img/section1_1_home_01.png") no-repeat center center;
-  background-size: 60%;
+  background-size: 55%;
   -webkit-transform: translate(20%, 0%);
           transform: translate(20%, 0%);
   position: absolute;
@@ -241,23 +242,23 @@ main .cont-2 .main-2 .main-2-3 {
 
 main .cont-2 .main-2 .main-2-3 img {
   width: 100%;
-  -webkit-transform: translateY(24%);
-          transform: translateY(24%);
+  -webkit-transform: translateY(18%);
+          transform: translateY(18%);
 }
 
 main .cont-2 .main-2 .main-2-3 div {
   font-size: 1.3rem;
   width: 80%;
-  margin-top: 30vh;
-  margin-left: 10vh;
+  margin-top: 15vw;
+  margin-left: 6vw;
   white-space: pre-line;
 }
 
 main .cont-3 {
   position: absolute;
-  top: 370vh;
+  top: 222vw;
   width: 100%;
-  height: 200vh;
+  height: 120vw;
   background: #fafafa;
 }
 
@@ -267,7 +268,7 @@ main .cont-3 .main-3 {
 }
 
 main .cont-3 .main-3 h2 {
-  margin: 60px 0;
+  margin: 100px 0;
   white-space: pre-line;
   font-size: 2.5rem;
 }
@@ -282,17 +283,17 @@ main .cont-3 .main-3 h2 small {
 main .cont-3 .main-3 .main-3-1 {
   background: #fff;
   width: 100%;
-  height: 50vh;
+  height: 30vw;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 30px;
-  margin-bottom: 3vh;
+  margin-bottom: 1.8vw;
 }
 
 main .cont-3 .main-3 .main-3-1 .transfer-1 {
-  width: 60%;
+  width: 55%;
   background: url("img/section1_2_transfer_01.png") no-repeat center center;
   background-size: 60%;
   background-position-y: -20%;
@@ -306,8 +307,8 @@ main .cont-3 .main-3 .main-3-1 .transfer-1 img {
 }
 
 main .cont-3 .main-3 .main-3-1 p {
-  margin-top: 20vh;
-  font-size: 1.2rem;
+  margin-top: 12vw;
+  font-size: 1.4rem;
 }
 
 main .cont-3 .main-3 .main-3-1 p .call {
@@ -327,7 +328,7 @@ main .cont-3 .main-3 .main-3-2 .main-3-2-1 {
   color: #bbb;
   border-radius: 30px;
   padding: 30px;
-  margin-right: 5vh;
+  margin-right: 3vw;
 }
 
 main .cont-3 .main-3 .main-3-2 .main-3-2-1 p {
@@ -340,6 +341,20 @@ main .cont-3 .main-3 .main-3-2 .main-3-2-1 p .white-font {
   color: white;
 }
 
+main .cont-3 .main-3 .main-3-2 .main-3-2-1 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
 main .cont-3 .main-3 .main-3-2 .main-3-2-2 {
   border-radius: 30px;
   background: #fff;
@@ -347,20 +362,17 @@ main .cont-3 .main-3 .main-3-2 .main-3-2-2 {
 }
 
 main .cont-3 .main-3 .main-3-2 .main-3-2-2 .main-3-2-2-1 {
-  height: 30vh;
-  overflow: hidden;
+  height: 18vw;
   text-align: right;
 }
 
 main .cont-3 .main-3 .main-3-2 .main-3-2-2 .main-3-2-2-1 img {
-  width: 60%;
-  -webkit-transform: translateY(-30%);
-          transform: translateY(-30%);
+  width: 80%;
 }
 
 main .cont-3 .main-3 .main-3-2 .main-3-2-2 p {
   font-size: 1.1rem;
-  padding: 5vh;
+  padding: 3vw;
 }
 
 main .cont-3 .main-3 .main-3-2 .main-3-2-2 p .clock {
@@ -369,15 +381,15 @@ main .cont-3 .main-3 .main-3-2 .main-3-2-2 p .clock {
 
 main .cont-4 {
   position: absolute;
-  top: 570vh;
+  top: 342vw;
   right: 0;
   width: 100%;
-  height: 250vh;
+  height: 150vw;
 }
 
 main .cont-4 .main-4-1 h2 {
-  margin-top: 30vh;
-  margin-left: 5vh;
+  margin-top: 18vw;
+  margin-left: 3vw;
   white-space: pre-line;
   font-size: 2rem;
 }
@@ -413,8 +425,8 @@ main .cont-4 .main-4-1 .main-4-1-cont div:nth-of-type(2) {
   position: absolute;
   left: 50%;
   top: -20%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(-62%);
+          transform: translateX(-62%);
   width: 40%;
   background: url("img/section1_5_stock_01.png") center center no-repeat;
   background-size: 50%;
@@ -430,7 +442,7 @@ main .cont-4 .main-4-1 .main-4-1-cont div:nth-of-type(2) figure {
   position: absolute;
   left: -75%;
   top: 65%;
-  width: 120vh;
+  width: 72vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,18 +454,18 @@ main .cont-4 .main-4-1 .main-4-1-cont div:nth-of-type(2) figure {
 
 main .cont-4 .main-4-1 .main-4-1-cont div:nth-of-type(2) figure img {
   width: 178px;
-  margin-left: 2vh;
+  margin-left: 1.2vw;
 }
 
 main .cont-4 .main-4-1 p {
-  margin: 130vh auto 10vh;
+  margin: 78vw auto 6vw;
   white-space: pre-line;
   text-align: center;
 }
 
 main .cont-4 .main-4-2 {
   width: 100%;
-  height: 100vh;
+  height: 60vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -474,21 +486,21 @@ main .cont-4 .main-4-2 h2 {
 
 main .cont-5 {
   position: absolute;
-  top: 870vh;
+  top: 522vw;
   width: 100%;
-  height: 360vh;
+  height: 216vw;
   background: #fafafa;
 }
 
 main .cont-5 .main-5 {
   width: 80%;
-  margin: 20vh auto;
+  margin: 12vw auto;
 }
 
 main .cont-5 .main-5 h2 {
   white-space: pre-line;
   font-size: 2.3rem;
-  margin-bottom: 10vh;
+  margin-bottom: 6vw;
 }
 
 main .cont-5 .main-5 h2 small {
@@ -534,7 +546,7 @@ main .cont-5 .main-5 .table > div div svg {
 }
 
 main .cont-5 .main-5 .table > div p {
-  margin-bottom: 10vh;
+  margin-bottom: 6vw;
   white-space: pre-line;
 }
 
@@ -574,9 +586,9 @@ footer {
   background-color: #191f28;
   color: #fff;
   width: 100%;
-  height: 100vh;
+  height: 60vw;
   position: absolute;
-  top: 1150vh;
+  top: 690vw;
 }
 
 footer a {
@@ -585,7 +597,7 @@ footer a {
 
 footer .footer-cont {
   width: 80%;
-  margin: 5vh auto;
+  margin: 3vw auto;
 }
 
 footer .footer-cont div {
@@ -595,27 +607,27 @@ footer .footer-cont div {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 5vh;
+  margin-bottom: 3vw;
 }
 
 footer .footer-cont div ul li {
-  padding: 1vh;
+  padding: 0.6vw;
 }
 
 footer .footer-cont address {
   white-space: pre-line;
-  margin-bottom: 5vh;
+  margin-bottom: 3vw;
 }
 
 footer .footer-cont address small {
-  margin-bottom: 1vh;
+  margin-bottom: 0.6vw;
 }
 
 footer .footer-cont .term {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 5vh;
+  margin-bottom: 3vw;
 }
 
 footer .footer-cont .sns {
@@ -625,6 +637,6 @@ footer .footer-cont .sns {
 }
 
 footer .footer-cont .sns li {
-  margin: 1vh;
+  margin: 0.6vw;
 }
 /*# sourceMappingURL=index.css.map */
