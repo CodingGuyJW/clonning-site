@@ -262,45 +262,52 @@ main .cont-3 {
 }
 
 main .cont-3 .main-3 {
-  margin-top: 20vh;
-  margin-left: 5%;
+  width: 70%;
+  margin: 0 auto;
 }
 
 main .cont-3 .main-3 h2 {
+  margin: 60px 0;
   white-space: pre-line;
   font-size: 2.5rem;
 }
 
 main .cont-3 .main-3 h2 small {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  display: inline-block;
   color: blue;
 }
 
 main .cont-3 .main-3 .main-3-1 {
-  width: 70%;
+  background: #fff;
+  width: 100%;
   height: 50vh;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-radius: 30px;
+  margin-bottom: 3vh;
 }
 
 main .cont-3 .main-3 .main-3-1 .transfer-1 {
-  width: 70%;
+  width: 60%;
   background: url("img/section1_2_transfer_01.png") no-repeat center center;
-  background-size: 70%;
+  background-size: 60%;
   background-position-y: -20%;
   overflow: hidden;
 }
 
 main .cont-3 .main-3 .main-3-1 .transfer-1 img {
-  -webkit-transform: translateX(-10%);
-          transform: translateX(-10%);
-  width: 120%;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  width: 100%;
 }
 
 main .cont-3 .main-3 .main-3-1 p {
-  vertical-align: middle;
-  white-space: pre-line;
+  margin-top: 20vh;
+  font-size: 1.2rem;
 }
 
 main .cont-3 .main-3 .main-3-1 p .call {
@@ -317,10 +324,15 @@ main .cont-3 .main-3 .main-3-2 {
 main .cont-3 .main-3 .main-3-2 .main-3-2-1 {
   width: 30%;
   background: #000;
-  color: #ccc;
+  color: #bbb;
+  border-radius: 30px;
+  padding: 30px;
+  margin-right: 5vh;
 }
 
 main .cont-3 .main-3 .main-3-2 .main-3-2-1 p {
+  font-size: 1.5rem;
+  margin-top: 0;
   white-space: pre-line;
 }
 
@@ -329,6 +341,7 @@ main .cont-3 .main-3 .main-3-2 .main-3-2-1 p .white-font {
 }
 
 main .cont-3 .main-3 .main-3-2 .main-3-2-2 {
+  border-radius: 30px;
   background: #fff;
   width: 70%;
 }
@@ -346,7 +359,7 @@ main .cont-3 .main-3 .main-3-2 .main-3-2-2 .main-3-2-2-1 img {
 }
 
 main .cont-3 .main-3 .main-3-2 .main-3-2-2 p {
-  white-space: pre-line;
+  font-size: 1.1rem;
   padding: 5vh;
 }
 
@@ -461,19 +474,25 @@ main .cont-4 .main-4-2 h2 {
 
 main .cont-5 {
   position: absolute;
-  top: 820vh;
+  top: 870vh;
   width: 100%;
-  height: 300vh;
-  background: #eee;
+  height: 360vh;
+  background: #fafafa;
+}
+
+main .cont-5 .main-5 {
+  width: 80%;
+  margin: 20vh auto;
 }
 
 main .cont-5 .main-5 h2 {
-  width: 80%;
-  margin: 0 auto;
   white-space: pre-line;
+  font-size: 2.3rem;
+  margin-bottom: 10vh;
 }
 
 main .cont-5 .main-5 h2 small {
+  font-size: 1.5rem;
   color: blue;
 }
 
@@ -481,7 +500,6 @@ main .cont-5 .main-5 .table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
   margin: 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -490,13 +508,66 @@ main .cont-5 .main-5 .table {
           justify-content: space-between;
 }
 
-main .cont-5 .main-5 .table div {
+main .cont-5 .main-5 .table > div {
   width: 50%;
 }
 
-main .cont-5 .main-5 .table div span svg {
+main .cont-5 .main-5 .table > div div {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+}
+
+main .cont-5 .main-5 .table > div div svg {
   width: 60px;
   height: 60px;
+}
+
+main .cont-5 .main-5 .table > div p {
+  margin-bottom: 10vh;
+  white-space: pre-line;
+}
+
+main .cont-5 .main-5 .table > div:nth-of-type(1) div {
+  background: #ffe69b;
+}
+
+main .cont-5 .main-5 .table > div:nth-of-type(2) div {
+  background: #f2f4f6;
+}
+
+main .cont-5 .main-5 .table > div:nth-of-type(3) div {
+  background: #bce9e9;
+}
+
+main .cont-5 .main-5 .table > div:nth-of-type(4) div {
+  background: #aeefd5;
+}
+
+main .cont-5 .main-5 .table > div:nth-of-type(5) div {
+  background: #edccf8;
+}
+
+main .cont-5 .main-5 .table > div:nth-of-type(6) div {
+  background: #f2f4f6;
+}
+
+main .cont-5 .main-5 .table > div:nth-of-type(7) div {
+  background: #e8f3ff;
+}
+
+main .cont-5 .main-5 .table > div:nth-of-type(8) div {
+  background: #aeefd5;
 }
 
 footer {
@@ -505,7 +576,7 @@ footer {
   width: 100%;
   height: 100vh;
   position: absolute;
-  top: 1120vh;
+  top: 1150vh;
 }
 
 footer a {
