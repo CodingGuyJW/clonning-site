@@ -21,7 +21,7 @@ header {
   position: fixed;
   background-color: #fff;
   width: 100%;
-  height: 4.5vw;
+  height: 3vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,7 +125,7 @@ main .bg-vid {
 main .toss-word {
   position: absolute;
   left: 50%;
-  top: 30%;
+  top: 25%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 9;
@@ -136,7 +136,7 @@ main .toss-word {
 
 main .download {
   position: absolute;
-  top: 55%;
+  top: 45%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -148,8 +148,8 @@ main .download ul li {
 }
 
 main .download .btn-dwnld {
-  width: 15vw;
-  height: 6vw;
+  width: 10vw;
+  height: 4vw;
   border-radius: 3vw;
   border: none;
   background-color: blue;
@@ -178,12 +178,12 @@ main .cont-1 {
   position: absolute;
   top: 100%;
   width: 100%;
-  height: 48vw;
-  background-color: #fafafa;
+  height: 31vw;
+  background-color: #f9fafb;
 }
 
 main .cont-1 h2 {
-  margin-top: 12vw;
+  margin-top: 8vw;
   line-height: 3.5rem;
   font-size: 1.6rem;
   white-space: pre-line;
@@ -192,8 +192,8 @@ main .cont-1 h2 {
 
 main .cont-2 {
   position: absolute;
-  top: 107vw;
-  height: 114vw;
+  top: 92vw;
+  height: 87vw;
   width: 100%;
 }
 
@@ -204,7 +204,6 @@ main .cont-2 .main-2 {
 }
 
 main .cont-2 .main-2 .main-2-1 {
-  margin-top: 10vw;
   text-align: left;
   white-space: pre-line;
   font-size: 3rem;
@@ -247,19 +246,19 @@ main .cont-2 .main-2 .main-2-3 img {
 }
 
 main .cont-2 .main-2 .main-2-3 div {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   width: 80%;
-  margin-top: 15vw;
+  margin-top: 10vw;
   margin-left: 6vw;
   white-space: pre-line;
 }
 
 main .cont-3 {
   position: absolute;
-  top: 222vw;
+  top: 178vw;
   width: 100%;
-  height: 120vw;
-  background: #fafafa;
+  height: 105vw;
+  background: #f9fafb;
 }
 
 main .cont-3 .main-3 {
@@ -268,7 +267,7 @@ main .cont-3 .main-3 {
 }
 
 main .cont-3 .main-3 h2 {
-  margin: 100px 0;
+  margin: 9vw 0 6vw;
   white-space: pre-line;
   font-size: 2.5rem;
 }
@@ -277,7 +276,7 @@ main .cont-3 .main-3 h2 small {
   font-size: 1.2rem;
   margin: 20px 0;
   display: inline-block;
-  color: blue;
+  color: #3182f6;
 }
 
 main .cont-3 .main-3 .main-3-1 {
@@ -307,8 +306,9 @@ main .cont-3 .main-3 .main-3-1 .transfer-1 img {
 }
 
 main .cont-3 .main-3 .main-3-1 p {
+  margin-left: 3vw;
   margin-top: 12vw;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 main .cont-3 .main-3 .main-3-1 p .call {
@@ -325,14 +325,14 @@ main .cont-3 .main-3 .main-3-2 {
 main .cont-3 .main-3 .main-3-2 .main-3-2-1 {
   width: 30%;
   background: #000;
-  color: #bbb;
+  color: #b0b8c1;
   border-radius: 30px;
   padding: 30px;
   margin-right: 3vw;
 }
 
 main .cont-3 .main-3 .main-3-2 .main-3-2-1 p {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin-top: 0;
   white-space: pre-line;
 }
@@ -342,17 +342,13 @@ main .cont-3 .main-3 .main-3-2 .main-3-2-1 p .white-font {
 }
 
 main .cont-3 .main-3 .main-3-2 .main-3-2-1 div {
+  margin-top: 7vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: translateY(10%);
-          transform: translateY(10%);
 }
 
 main .cont-3 .main-3 .main-3-2 .main-3-2-2 {
@@ -371,43 +367,54 @@ main .cont-3 .main-3 .main-3-2 .main-3-2-2 .main-3-2-2-1 img {
 }
 
 main .cont-3 .main-3 .main-3-2 .main-3-2-2 p {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   padding: 3vw;
 }
 
 main .cont-3 .main-3 .main-3-2 .main-3-2-2 p .clock {
-  color: blue;
+  color: #3182f6;
 }
 
 main .cont-4 {
   position: absolute;
-  top: 342vw;
+  top: 282vw;
   right: 0;
   width: 100%;
-  height: 150vw;
+  height: 160vw;
+}
+
+main .cont-4 .main-4-1 {
+  width: 70%;
+  margin: 0 auto;
 }
 
 main .cont-4 .main-4-1 h2 {
-  margin-top: 18vw;
-  margin-left: 3vw;
+  margin-top: 10vw;
   white-space: pre-line;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 main .cont-4 .main-4-1 h2 small {
-  color: blue;
+  font-size: 1.2rem;
+  margin: 20px 0;
+  display: inline-block;
+  color: #3182f6;
 }
 
 main .cont-4 .main-4-1 .main-4-1-cont {
   position: relative;
+  width: 100%;
+  height: 50vw;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
 }
 
 main .cont-4 .main-4-1 .main-4-1-cont .invest-text {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -415,21 +422,32 @@ main .cont-4 .main-4-1 .main-4-1-cont .invest-text {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .cont-4 .main-4-1 .main-4-1-cont .invest-text p {
-  width: 30%;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: auto;
 }
 
 main .cont-4 .main-4-1 .main-4-1-cont div:nth-of-type(2) {
   position: absolute;
   left: 50%;
-  top: -20%;
-  -webkit-transform: translateX(-62%);
-          transform: translateX(-62%);
-  width: 40%;
+  top: 10%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60%;
   background: url("img/section1_5_stock_01.png") center center no-repeat;
-  background-size: 50%;
+  background-size: 55%;
 }
 
 main .cont-4 .main-4-1 .main-4-1-cont div:nth-of-type(2) img {
@@ -440,8 +458,8 @@ main .cont-4 .main-4-1 .main-4-1-cont div:nth-of-type(2) img {
 
 main .cont-4 .main-4-1 .main-4-1-cont div:nth-of-type(2) figure {
   position: absolute;
-  left: -75%;
-  top: 65%;
+  left: -40%;
+  top: 69%;
   width: 72vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -458,14 +476,15 @@ main .cont-4 .main-4-1 .main-4-1-cont div:nth-of-type(2) figure img {
 }
 
 main .cont-4 .main-4-1 p {
-  margin: 78vw auto 6vw;
+  font-size: 1.5rem;
+  margin: 15vw 0 10vw;
   white-space: pre-line;
   text-align: center;
 }
 
 main .cont-4 .main-4-2 {
   width: 100%;
-  height: 60vw;
+  height: 53vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,26 +505,28 @@ main .cont-4 .main-4-2 h2 {
 
 main .cont-5 {
   position: absolute;
-  top: 522vw;
+  top: 435vw;
   width: 100%;
-  height: 216vw;
-  background: #fafafa;
+  height: 125vw;
+  background: #f9fafb;
 }
 
 main .cont-5 .main-5 {
-  width: 80%;
-  margin: 12vw auto;
+  width: 70%;
+  margin: 7vw auto 12vw;
 }
 
 main .cont-5 .main-5 h2 {
+  margin: 9vw 0 6vw;
   white-space: pre-line;
-  font-size: 2.3rem;
-  margin-bottom: 6vw;
+  font-size: 2.8rem;
 }
 
 main .cont-5 .main-5 h2 small {
   font-size: 1.5rem;
-  color: blue;
+  margin: 20px 0;
+  display: inline-block;
+  color: #3182f6;
 }
 
 main .cont-5 .main-5 .table {
@@ -583,12 +604,13 @@ main .cont-5 .main-5 .table > div:nth-of-type(8) div {
 }
 
 footer {
+  font-size: 0.9rem;
   background-color: #191f28;
   color: #fff;
   width: 100%;
-  height: 60vw;
+  height: 50vw;
   position: absolute;
-  top: 690vw;
+  top: 560vw;
 }
 
 footer a {
@@ -596,8 +618,8 @@ footer a {
 }
 
 footer .footer-cont {
-  width: 80%;
-  margin: 3vw auto;
+  width: 60%;
+  margin: 5vw auto;
 }
 
 footer .footer-cont div {
@@ -628,6 +650,10 @@ footer .footer-cont .term {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 3vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  white-space: pre-wrap;
 }
 
 footer .footer-cont .sns {
