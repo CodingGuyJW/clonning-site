@@ -17,6 +17,10 @@ a {
   color: black;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   position: fixed;
   background-color: #fff;
