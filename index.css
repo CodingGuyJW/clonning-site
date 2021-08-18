@@ -25,7 +25,7 @@ header {
   position: fixed;
   background-color: #fff;
   width: 100%;
-  height: 3vw;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,7 +37,7 @@ header {
 
 header div {
   margin: 0 auto;
-  width: 70%;
+  width: 56%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,9 +95,14 @@ header div .lang li:nth-of-type(1)::after {
   color: #999;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 main .wrapper-vid {
-  position: absolute;
+  position: relative;
   width: 100%;
+  height: 100vh;
   pointer-events: none;
 }
 
@@ -109,7 +114,7 @@ main .gradient-bg {
   min-height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
-  position: relative;
+  position: absolute;
   z-index: 2;
   pointer-events: none;
 }
@@ -119,7 +124,7 @@ main .bg-vid {
   top: 0;
   z-index: -1;
   width: 100%;
-  height: 60vw;
+  height: 100%;
   min-height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -179,38 +184,49 @@ main .move-page {
 }
 
 main .cont-1 {
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  height: 31vw;
+  height: 600px;
   background-color: #f9fafb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .cont-1 h2 {
-  margin-top: 8vw;
-  line-height: 3.5rem;
   font-size: 1.6rem;
   white-space: pre-line;
-  text-align: center;
 }
 
 main .cont-2 {
-  position: absolute;
-  top: 92vw;
-  height: 87vw;
   width: 100%;
+  padding: 250px 0 150px;
 }
 
 main .cont-2 .main-2 {
-  width: 70%;
+  width: 56%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
 }
 
 main .cont-2 .main-2 .main-2-1 {
+  width: 100%;
   text-align: left;
   white-space: pre-line;
   font-size: 3rem;
+  margin-bottom: 50px;
 }
 
 main .cont-2 .main-2 .main-2-1 small {
@@ -222,56 +238,78 @@ main .cont-2 .main-2 .main-2-1 small {
 
 main .cont-2 .main-2 .main-2-2 {
   width: 55%;
-  background: url("img/section1_1_home_02.png") no-repeat center center;
-  background-size: 60%;
-  -webkit-transform: translate(-20%, 0);
-          transform: translate(-20%, 0);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  -webkit-transform: translate(-15%, 0%);
+          transform: translate(-15%, 0%);
 }
 
-main .cont-2 .main-2 .main-2-2 img {
+main .cont-2 .main-2 .main-2-2 img:nth-of-type(1) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
+}
+
+main .cont-2 .main-2 .main-2-2 img:nth-of-type(2) {
+  position: relative;
   width: 100%;
 }
 
 main .cont-2 .main-2 .main-2-3 {
   width: 55%;
-  background: url("img/section1_1_home_01.png") no-repeat center center;
-  background-size: 55%;
-  -webkit-transform: translate(20%, 0%);
-          transform: translate(20%, 0%);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-transform: translate(15%, 0%);
+          transform: translate(15%, 0%);
   position: absolute;
-  top: -10%;
-  right: 0%;
-}
-
-main .cont-2 .main-2 .main-2-3 img {
-  width: 100%;
-  -webkit-transform: translateY(18%);
-          transform: translateY(18%);
+  right: 0;
+  top: 0;
 }
 
 main .cont-2 .main-2 .main-2-3 div {
-  font-size: 1.5rem;
-  width: 80%;
-  margin-top: 10vw;
-  margin-left: 6vw;
+  position: relative;
+}
+
+main .cont-2 .main-2 .main-2-3 img:nth-of-type(1) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
+}
+
+main .cont-2 .main-2 .main-2-3 img:nth-of-type(2) {
+  position: relative;
+  width: 100%;
+}
+
+main .cont-2 .main-2 .main-2-3 p {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.2rem;
   white-space: pre-line;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 main .cont-3 {
-  position: absolute;
-  top: 178vw;
   width: 100%;
-  height: 105vw;
   background: #f9fafb;
+  padding: 100px 0;
 }
 
 main .cont-3 .main-3 {
-  width: 70%;
+  width: 56%;
   margin: 0 auto;
 }
 
 main .cont-3 .main-3 h2 {
-  margin: 9vw 0 6vw;
+  margin: 0 0 6vw;
   white-space: pre-line;
   font-size: 2.5rem;
 }
@@ -286,7 +324,6 @@ main .cont-3 .main-3 h2 small {
 main .cont-3 .main-3 .main-3-1 {
   background: #fff;
   width: 100%;
-  height: 30vw;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,15 +334,13 @@ main .cont-3 .main-3 .main-3-1 {
 
 main .cont-3 .main-3 .main-3-1 .transfer-1 {
   width: 55%;
-  background: url("img/section1_2_transfer_01.png") no-repeat center center;
+  height: 30vw;
+  background: url("img/section1_2_transfer_01.png") no-repeat 50% 3.5vw;
   background-size: 60%;
-  background-position-y: -20%;
   overflow: hidden;
 }
 
 main .cont-3 .main-3 .main-3-1 .transfer-1 img {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
   width: 100%;
 }
 
@@ -380,15 +415,12 @@ main .cont-3 .main-3 .main-3-2 .main-3-2-2 p .clock {
 }
 
 main .cont-4 {
-  position: absolute;
-  top: 282vw;
-  right: 0;
+  position: relative;
   width: 100%;
-  height: 160vw;
 }
 
 main .cont-4 .main-4-1 {
-  width: 70%;
+  width: 56%;
   margin: 0 auto;
 }
 
@@ -415,11 +447,12 @@ main .cont-4 .main-4-1 .main-4-1-cont {
 
 main .cont-4 .main-4-1 .main-4-1-cont .invest-text {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
+  min-width: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,7 +465,7 @@ main .cont-4 .main-4-1 .main-4-1-cont .invest-text {
 }
 
 main .cont-4 .main-4-1 .main-4-1-cont .invest-text p {
-  font-size: 1.5rem;
+  font-size: 1.3vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,12 +477,9 @@ main .cont-4 .main-4-1 .main-4-1-cont .invest-text p {
 }
 
 main .cont-4 .main-4-1 .main-4-1-cont div:nth-of-type(2) {
-  position: absolute;
-  left: 50%;
-  top: 10%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 60%;
+  position: relative;
+  width: 600px;
+  margin: 100px auto;
   background: url("img/section1_5_stock_01.png") center center no-repeat;
   background-size: 55%;
 }
@@ -462,26 +492,27 @@ main .cont-4 .main-4-1 .main-4-1-cont div:nth-of-type(2) img {
 
 main .cont-4 .main-4-1 .main-4-1-cont div:nth-of-type(2) figure {
   position: absolute;
-  left: -40%;
-  top: 69%;
-  width: 72vw;
+  left: 50%;
+  bottom: 15%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   z-index: 20;
 }
 
 main .cont-4 .main-4-1 .main-4-1-cont div:nth-of-type(2) figure img {
   width: 178px;
-  margin-left: 1.2vw;
+  margin-left: 16px;
 }
 
 main .cont-4 .main-4-1 p {
   font-size: 1.5rem;
-  margin: 15vw 0 10vw;
+  margin: 9vw 0 10vw;
   white-space: pre-line;
   text-align: center;
 }
@@ -498,8 +529,8 @@ main .cont-4 .main-4-2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(img/section2_4_big.jpg) center center no-repeat;
-  background-size: 120%;
+  background: url("img/section2_4_big.jpg") center center no-repeat;
+  background-size: cover;
 }
 
 main .cont-4 .main-4-2 h2 {
@@ -508,20 +539,19 @@ main .cont-4 .main-4-2 h2 {
 }
 
 main .cont-5 {
-  position: absolute;
-  top: 435vw;
+  position: relative;
   width: 100%;
-  height: 125vw;
   background: #f9fafb;
+  padding: 9vw 0;
 }
 
 main .cont-5 .main-5 {
-  width: 70%;
-  margin: 7vw auto 12vw;
+  width: 56%;
+  margin: 0vw auto;
 }
 
 main .cont-5 .main-5 h2 {
-  margin: 9vw 0 6vw;
+  margin: 0vw 0 6vw;
   white-space: pre-line;
   font-size: 2.8rem;
 }
@@ -612,9 +642,8 @@ footer {
   background-color: #191f28;
   color: #fff;
   width: 100%;
-  height: 50vw;
-  position: absolute;
-  top: 560vw;
+  position: relative;
+  padding: 9vw 0;
 }
 
 footer a {
@@ -623,7 +652,7 @@ footer a {
 
 footer .footer-cont {
   width: 60%;
-  margin: 5vw auto;
+  margin: 0vw auto;
 }
 
 footer .footer-cont div {
