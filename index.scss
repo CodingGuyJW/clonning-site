@@ -1,142 +1,7 @@
 @import "_common.scss";
 
-// burger menu
-
-@-webkit-keyframes slideInLeft {
-    0% {
-        transform: translate3d(-250px, 0, 0);
-        visibility: visible;
-    }
-    100% {
-        transform: translate3d(0, 0, 0);
-    }
-}
-@keyframes slideInLeft {
-    0% {
-        transform: translate3d(-250px, 0, 0);
-        visibility: visible;
-    }
-    100% {
-        transform: translate3d(0, 0, 0);
-    }
-}
-@-webkit-keyframes slideOutLeft {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-    100% {
-        transform: translate3d(-250px, 0, 0);
-        visibility: hidden;
-    }
-}
-@keyframes slideOutLeft {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-    100% {
-        transform: translate3d(-250px, 0, 0);
-        visibility: hidden;
-    }
-}
-
-.b-menu {
-    background: white;
-    border: white solid 2px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: inline-block;
-    height: 38px;
-    padding-left: 15px;
-    padding-top: 15px;
-    position: relative;
-    transition: all 0.4s ease;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    width: 38px;
-    z-index: 12;
-    transform:translateX(3px);
-}
-.b-menu:hover {
-    border: #444444 solid 2px;
-}
-
-.b-bun {
-    background: #444444;
-    position: relative;
-    transition: all 0.4s ease;
-}
-.b-bun--top {
-    height: 2px;
-    top: 0;
-    width: 25px;
-}
-.b-bun--mid {
-    height: 2px;
-    top: 8px;
-    width: 25px;
-}
-.b-bun--bottom {
-    height: 2px;
-    top: 16px;
-    width: 25px;
-}
-
-body.open {
-    overflow: hidden;
-}
-body.open:after {
-    opacity: 1;
-    visibility: visible;
-}
-
-.b-nav:not(.open) {
-    visibility: hidden;
-}
-.b-nav li:not(.open) {
-    -webkit-animation-duration: 0.4s;
-            animation-duration: 0.4s;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-    -webkit-animation-name: slideOutLeft;
-            animation-name: slideOutLeft;
-}
-.b-nav.open {
-    visibility: visible;
-  }
-  .b-nav.open li {
-    -webkit-animation-duration: 0.4s;
-            animation-duration: 0.4s;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-    -webkit-animation-name: slideInLeft;
-            animation-name: slideInLeft;
-}
-
-.b-nav:hover:not(.open) .bun-top,
-.b-nav:hover:not(.open) .bun-mid,
-.b-nav:hover:not(.open) .bun-bottom {
-  background: white;
-}
-
-.b-menu.open .b-bun--top {
-  background: #444444;
-  top: 9px;
-  transform: rotate(45deg);
-}
-.b-menu.open .b-bun--mid {
-  opacity: 0;
-}
-.b-menu.open .b-bun--bottom {
-  background: #444444;
-  top: 5px;
-  transform: rotate(-45deg);
-}
-
+// hide burger menu
 .b-menu{display: none;}
-
-// burger menu end
 
 header{
     position:fixed;
@@ -437,7 +302,7 @@ main{
                         font-size:1vw;
                         padding:2vw;
                         .clock{color:#3182f6;
-                            svg{}
+
                         }
                     }
                 }
@@ -477,7 +342,7 @@ main{
                     justify-content:space-between;
                     align-items:center;
                     p{
-                        font-size:1vw;
+                        font-size:1.7vw;
                         width:auto; height:auto;
                     }
                 }
@@ -564,7 +429,6 @@ main{
                         svg{width:60px; height:60px;}
                     }
                     
-                    h3{}
                     p{
                         margin-bottom:6vw;
                         white-space: pre-line;
@@ -638,7 +502,7 @@ footer{
 // responsive web design
 
 // laptop - test 필요
-@media (max-width:1440px){}
+// @media (max-width:1440px){}
 
 
 // header 1140px 이하
@@ -650,13 +514,28 @@ footer{
         }
     }
 }
+
 @media (max-width:1024px){
-    //56% -> 76~80% 정도
+    //56% -> 76~80%
     header{
-        div{width:76%;}
+        div{
+            width:76%;
+            .b-nav{
+                li{
+                    a{font-size:1.3vw;}
+                }
+            }
+            .lang{
+                li{
+                    a{font-size:1.5vw;}
+                }
+            }
+        }
     }
     main{
         .cont-2 .main-2,.cont-3 .main-3,.cont-4 .main-4-1,.cont-5 .main-5{width:76%;}
+        .cont-2{padding:10vw 0;}
+
     }
     footer{
         .footer-cont{width:76%;}
@@ -664,19 +543,145 @@ footer{
 }
 
 @media (max-width:768px){
-    // 56% -> 92%로 변경
+    // burger menu
+    @-webkit-keyframes slideInLeft {
+        0% {
+            transform: translate3d(-250px, 0, 0);
+            visibility: visible;
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    @keyframes slideInLeft {
+        0% {
+            transform: translate3d(-250px, 0, 0);
+            visibility: visible;
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    @-webkit-keyframes slideOutLeft {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            transform: translate3d(-250px, 0, 0);
+            visibility: hidden;
+        }
+    }
+    @keyframes slideOutLeft {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            transform: translate3d(-250px, 0, 0);
+            visibility: hidden;
+        }
+    }
+
+    .b-menu {
+        background: white;
+        border: white solid 2px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: inline-block;
+        height: 38px;
+        padding-left: 15px;
+        padding-top: 15px;
+        position: relative;
+        transition: all 0.4s ease;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        width: 38px;
+        z-index: 12;
+        transform:translateX(3px);
+    }
+    .b-menu:hover {
+        border: #444444 solid 2px;
+    }
+
+    .b-bun {
+        background: #444444;
+        position: relative;
+        transition: all 0.4s ease;
+    }
+    .b-bun--top {
+        height: 2px;
+        top: 0;
+        width: 25px;
+    }
+    .b-bun--mid {
+        height: 2px;
+        top: 8px;
+        width: 25px;
+    }
+    .b-bun--bottom {
+        height: 2px;
+        top: 16px;
+        width: 25px;
+    }
+
+    .b-nav:not(.open) {
+        visibility: hidden;
+    }
+    .b-nav li:not(.open) {
+        -webkit-animation-duration: 0.4s;
+                animation-duration: 0.4s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-name: slideOutLeft;
+                animation-name: slideOutLeft;
+    }
+    .b-nav.open {
+        visibility: visible;
+    }
+    .b-nav.open li {
+        -webkit-animation-duration: 0.4s;
+                animation-duration: 0.4s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-name: slideInLeft;
+                animation-name: slideInLeft;
+    }
+
+    .b-nav:hover:not(.open) .bun-top,
+    .b-nav:hover:not(.open) .bun-mid,
+    .b-nav:hover:not(.open) .bun-bottom {
+    background: white;
+    }
+
+    .b-menu.open .b-bun--top {
+    background: #444444;
+    top: 9px;
+    transform: rotate(45deg);
+    }
+    .b-menu.open .b-bun--mid {
+    opacity: 0;
+    }
+    .b-menu.open .b-bun--bottom {
+    background: #444444;
+    top: 5px;
+    transform: rotate(-45deg);
+    }
+
+    // 56% -> 92%
     header{
-        div{
-            width:92%;
+        & > div{
+            width:100%;
+            padding:20px;
             
             .b-nav{display:none;}
             .b-nav.open{
                 display:block;
                 position:fixed;
-                top:61px;
+                top:61px; left:0;
                 background:#fff;
                 width:100%;
-                padding-left:2vw;
+                padding-left:0vw;
                 li{
                     padding:2.5vw;
                     a{
@@ -691,7 +696,93 @@ footer{
         }
     }
     main{
+        .toss-word{
+            width:100%;
+            font-size:7vw;
+        }
+        .cont-1{
+            height:90vw;
+            h2{
+                width:92%;
+                font-size:3.2vw;
+            }
+        }
         .cont-2 .main-2,.cont-3 .main-3,.cont-4 .main-4-1,.cont-5 .main-5{width:92%;}
+
+        .cont-2{
+            padding:3vw 0;
+            .main-2{
+                .main-2-1{
+                    font-size:3.5vw;
+                    small{font-size:2.5vw;}
+                }
+                .main-2-3{
+                    p{font-size:1.8vw;}
+                }
+            }
+        }
+        .cont-3{
+            padding:5vw 0;
+            .main-3{
+                h2{
+                    font-size:3.5vw;
+                    small{font-size:2.5vw;}
+                }
+                .main-3-1{
+                    p{
+                        font-size:2.3vw;
+                        .call{font-size:2.3vw;}
+                    }
+                }
+                .main-3-2{
+                    .main-3-2-1{
+                        p{font-size:2.5vw;}
+                    }
+                    .main-3-2-2{
+                        p{
+                            margin-top:5vw;
+                            font-size:2vw;
+                        }
+                    }
+                }
+            }
+        }
+        .cont-4{
+            padding:5vw 0;
+            .main-4-1{
+                padding:2vw 0;
+                h2{
+                    font-size:3.5vw;
+                    small{font-size:2.5vw;}
+                }
+                .main-4-1-cont{
+                    width:100%;
+
+                    .invest-text{
+                        width:100%;
+                        min-width:0;
+                        max-width:800px;
+                        box-sizing: border-box;
+                        z-index:35;
+                        p{font-size:1.8vw;}
+                    }
+                    div:nth-of-type(2){
+                        margin-bottom:0;
+                    }
+                }
+                p{transform:translateY(-50%);}
+            }
+        }
+        .cont-5{
+            .main-5{
+                .table{
+                    div{
+                        width:48%;
+                        font-size:2vw;
+                    }
+                }
+            }
+        }
     }
     footer{
         .footer-cont{width:92%;}
