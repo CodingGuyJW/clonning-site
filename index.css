@@ -21,6 +21,168 @@ body {
   overflow-x: hidden;
 }
 
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(-250px, 0, 0);
+            transform: translate3d(-250px, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(-250px, 0, 0);
+            transform: translate3d(-250px, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes slideOutLeft {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-250px, 0, 0);
+            transform: translate3d(-250px, 0, 0);
+    visibility: hidden;
+  }
+}
+
+@keyframes slideOutLeft {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-250px, 0, 0);
+            transform: translate3d(-250px, 0, 0);
+    visibility: hidden;
+  }
+}
+
+.b-menu {
+  background: white;
+  border: white solid 2px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 38px;
+  padding-left: 15px;
+  padding-top: 15px;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 38px;
+  z-index: 12;
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
+}
+
+.b-menu:hover {
+  border: #444444 solid 2px;
+}
+
+.b-bun {
+  background: #444444;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.b-bun--top {
+  height: 2px;
+  top: 0;
+  width: 25px;
+}
+
+.b-bun--mid {
+  height: 2px;
+  top: 8px;
+  width: 25px;
+}
+
+.b-bun--bottom {
+  height: 2px;
+  top: 16px;
+  width: 25px;
+}
+
+body.open {
+  overflow: hidden;
+}
+
+body.open:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.b-nav:not(.open) {
+  visibility: hidden;
+}
+
+.b-nav li:not(.open) {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: slideOutLeft;
+  animation-name: slideOutLeft;
+}
+
+.b-nav.open {
+  visibility: visible;
+}
+
+.b-nav.open li {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+.b-nav:hover:not(.open) .bun-top,
+.b-nav:hover:not(.open) .bun-mid,
+.b-nav:hover:not(.open) .bun-bottom {
+  background: white;
+}
+
+.b-menu.open .b-bun--top {
+  background: #444444;
+  top: 9px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.b-menu.open .b-bun--mid {
+  opacity: 0;
+}
+
+.b-menu.open .b-bun--bottom {
+  background: #444444;
+  top: 5px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.b-menu {
+  display: none;
+}
+
 header {
   position: fixed;
   background-color: #fff;
@@ -32,12 +194,15 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid transparent;
+  border-bottom-color: rgba(0, 27, 55, 0.1);
   z-index: 20;
 }
 
-header div {
+header > div {
   margin: 0 auto;
   width: 56%;
+  min-width: 1050px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,19 +214,20 @@ header div {
           align-items: center;
 }
 
-header div h1 {
+header > div h1 {
   font-size: 1.5rem;
 }
 
-header div h1 a {
-  color: blue;
+header > div h1 a {
+  width: 76px;
 }
 
-header div h1 a img {
-  vertical-align: middle;
+header > div h1 a svg {
+  width: auto;
+  height: 20px;
 }
 
-header div nav {
+header > div .b-nav {
   width: 50%;
   margin-left: auto;
   display: -webkit-box;
@@ -72,7 +238,7 @@ header div nav {
   font-size: 0.8rem;
 }
 
-header div .lang {
+header > div .lang {
   margin-left: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,15 +247,15 @@ header div .lang {
       justify-content: space-around;
 }
 
-header div .lang li a {
+header > div .lang li a {
   color: #999;
 }
 
-header div .lang li a.active {
+header > div .lang li a.active {
   color: #000;
 }
 
-header div .lang li:nth-of-type(1)::after {
+header > div .lang li:nth-of-type(1)::after {
   content: '|';
   margin: 1rem;
   color: #999;
@@ -107,10 +273,9 @@ main .wrapper-vid {
 }
 
 main .gradient-bg {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0.25)), color-stop(50%, rgba(255, 255, 255, 0.5)), color-stop(75%, rgba(255, 255, 255, 0.75)), to(white));
-  background: linear-gradient(to top, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0.25) 25%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.75) 75%, white 100%);
+  background: linear-gradient(180deg, white 0%, white 59px, rgba(255, 255, 255, 0) 100%);
   width: 100%;
-  height: 60vw;
+  height: 500px;
   min-height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -134,9 +299,11 @@ main .bg-vid {
 main .toss-word {
   position: absolute;
   left: 50%;
-  top: 25%;
+  top: 200px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 600px;
+  height: 184px;
   z-index: 9;
   white-space: pre-line;
   text-align: center;
@@ -145,7 +312,7 @@ main .toss-word {
 
 main .download {
   position: absolute;
-  top: 45%;
+  top: 400px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -157,11 +324,11 @@ main .download ul li {
 }
 
 main .download .btn-dwnld {
-  width: 10vw;
-  height: 4vw;
-  border-radius: 3vw;
+  width: 178px;
+  height: 71px;
+  border-radius: 40px;
   border: none;
-  background-color: blue;
+  background-color: #3182f6;
   color: #fff;
   font-size: 1.3rem;
   -webkit-transition: 0.5s;
@@ -169,18 +336,19 @@ main .download .btn-dwnld {
 }
 
 main .download .btn-dwnld:hover {
-  background-color: #000064;
+  background-color: #1b64da;
 }
 
 main .move-page {
   position: absolute;
   bottom: 5%;
   left: 50%;
-  -webkit-transform: translateX(-50%) rotate(90deg);
-          transform: translateX(-50%) rotate(90deg);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   border: none;
   background: none;
-  font-size: 2rem;
 }
 
 main .cont-1 {
@@ -200,6 +368,7 @@ main .cont-1 {
 main .cont-1 h2 {
   font-size: 1.6rem;
   white-space: pre-line;
+  text-align: center;
 }
 
 main .cont-2 {
@@ -225,15 +394,15 @@ main .cont-2 .main-2 .main-2-1 {
   width: 100%;
   text-align: left;
   white-space: pre-line;
-  font-size: 3rem;
+  font-size: 2.4vw;
   margin-bottom: 50px;
 }
 
 main .cont-2 .main-2 .main-2-1 small {
-  color: blue;
+  color: #3182f6;
   display: inline-block;
   padding-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 1.5vw;
 }
 
 main .cont-2 .main-2 .main-2-2 {
@@ -289,9 +458,10 @@ main .cont-2 .main-2 .main-2-3 img:nth-of-type(2) {
 }
 
 main .cont-2 .main-2 .main-2-3 p {
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
-  font-size: 1.2rem;
+  padding-left: 15%;
+  font-size: 1vw;
   white-space: pre-line;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -300,7 +470,7 @@ main .cont-2 .main-2 .main-2-3 p {
 main .cont-3 {
   width: 100%;
   background: #f9fafb;
-  padding: 100px 0;
+  padding: 100px 0 150px;
 }
 
 main .cont-3 .main-3 {
@@ -311,11 +481,11 @@ main .cont-3 .main-3 {
 main .cont-3 .main-3 h2 {
   margin: 0 0 6vw;
   white-space: pre-line;
-  font-size: 2.5rem;
+  font-size: 2.3vw;
 }
 
 main .cont-3 .main-3 h2 small {
-  font-size: 1.2rem;
+  font-size: 1.3vw;
   margin: 20px 0;
   display: inline-block;
   color: #3182f6;
@@ -345,14 +515,22 @@ main .cont-3 .main-3 .main-3-1 .transfer-1 img {
 }
 
 main .cont-3 .main-3 .main-3-1 p {
-  margin-left: 3vw;
   margin-top: 12vw;
-  font-size: 1.6rem;
+  font-size: 1.3vw;
 }
 
 main .cont-3 .main-3 .main-3-1 p .call {
   display: inline;
-  color: green;
+  color: #03b26c;
+  font-size: 1.3vw;
+  margin: 0;
+  padding: 0;
+}
+
+main .cont-3 .main-3 .main-3-1 p .call svg {
+  width: 1.7vw;
+  max-width: 18.33px;
+  max-height: 18.33px;
 }
 
 main .cont-3 .main-3 .main-3-2 {
@@ -363,7 +541,7 @@ main .cont-3 .main-3 .main-3-2 {
 
 main .cont-3 .main-3 .main-3-2 .main-3-2-1 {
   width: 30%;
-  background: #000;
+  background: #191f28;
   color: #b0b8c1;
   border-radius: 30px;
   padding: 30px;
@@ -371,7 +549,7 @@ main .cont-3 .main-3 .main-3-2 .main-3-2-1 {
 }
 
 main .cont-3 .main-3 .main-3-2 .main-3-2-1 p {
-  font-size: 2.5rem;
+  font-size: 1.8vw;
   margin-top: 0;
   white-space: pre-line;
 }
@@ -406,8 +584,8 @@ main .cont-3 .main-3 .main-3-2 .main-3-2-2 .main-3-2-2-1 img {
 }
 
 main .cont-3 .main-3 .main-3-2 .main-3-2-2 p {
-  font-size: 1.6rem;
-  padding: 3vw;
+  font-size: 1vw;
+  padding: 2vw;
 }
 
 main .cont-3 .main-3 .main-3-2 .main-3-2-2 p .clock {
@@ -422,16 +600,16 @@ main .cont-4 {
 main .cont-4 .main-4-1 {
   width: 56%;
   margin: 0 auto;
+  padding: 150px 0;
 }
 
 main .cont-4 .main-4-1 h2 {
-  margin-top: 10vw;
   white-space: pre-line;
-  font-size: 2.5rem;
+  font-size: 2.3vw;
 }
 
 main .cont-4 .main-4-1 h2 small {
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   margin: 20px 0;
   display: inline-block;
   color: #3182f6;
@@ -440,14 +618,13 @@ main .cont-4 .main-4-1 h2 small {
 main .cont-4 .main-4-1 .main-4-1-cont {
   position: relative;
   width: 100%;
-  height: 50vw;
   -webkit-transform: translateY(-10%);
           transform: translateY(-10%);
 }
 
 main .cont-4 .main-4-1 .main-4-1-cont .invest-text {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -465,13 +642,7 @@ main .cont-4 .main-4-1 .main-4-1-cont .invest-text {
 }
 
 main .cont-4 .main-4-1 .main-4-1-cont .invest-text p {
-  font-size: 1.3vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  font-size: 1vw;
   width: auto;
   height: auto;
 }
@@ -512,7 +683,7 @@ main .cont-4 .main-4-1 .main-4-1-cont div:nth-of-type(2) figure img {
 
 main .cont-4 .main-4-1 p {
   font-size: 1.5rem;
-  margin: 9vw 0 10vw;
+  margin: 1vw 0;
   white-space: pre-line;
   text-align: center;
 }
@@ -534,7 +705,7 @@ main .cont-4 .main-4-2 {
 }
 
 main .cont-4 .main-4-2 h2 {
-  font-size: 4rem;
+  font-size: 4.5vw;
   color: #fff;
 }
 
@@ -643,15 +814,15 @@ footer {
   color: #fff;
   width: 100%;
   position: relative;
-  padding: 9vw 0;
+  padding: 70px 0;
 }
 
 footer a {
-  color: #fff;
+  color: #6b7684;
 }
 
 footer .footer-cont {
-  width: 60%;
+  width: 56%;
   margin: 0vw auto;
 }
 
@@ -665,17 +836,25 @@ footer .footer-cont div {
   margin-bottom: 3vw;
 }
 
+footer .footer-cont div ul li:nth-of-type(1) a {
+  font-weight: bolder;
+  color: #b0b8c1;
+}
+
 footer .footer-cont div ul li {
   padding: 0.6vw;
 }
 
 footer .footer-cont address {
-  white-space: pre-line;
   margin-bottom: 3vw;
+  font-style: normal;
+  color: #8b95a1;
 }
 
-footer .footer-cont address small {
-  margin-bottom: 0.6vw;
+footer .footer-cont address strong {
+  display: block;
+  padding-bottom: 12px;
+  color: #b0b8c1;
 }
 
 footer .footer-cont .term {
@@ -697,5 +876,60 @@ footer .footer-cont .sns {
 
 footer .footer-cont .sns li {
   margin: 0.6vw;
+}
+
+@media (max-width: 1140px) {
+  header div {
+    width: 90%;
+    min-width: 0px;
+  }
+}
+
+@media (max-width: 1024px) {
+  header div {
+    width: 76%;
+  }
+  main .cont-2 .main-2, main .cont-3 .main-3, main .cont-4 .main-4-1, main .cont-5 .main-5 {
+    width: 76%;
+  }
+  footer .footer-cont {
+    width: 76%;
+  }
+}
+
+@media (max-width: 768px) {
+  header div {
+    width: 92%;
+  }
+  header div .b-nav {
+    display: none;
+  }
+  header div .b-nav.open {
+    display: block;
+    position: fixed;
+    top: 61px;
+    background: #fff;
+    width: 100%;
+    padding-left: 2vw;
+  }
+  header div .b-nav.open li {
+    padding: 2.5vw;
+  }
+  header div .b-nav.open li a {
+    font-size: 3vw;
+    color: #4e5968;
+  }
+  header div .lang {
+    display: none;
+  }
+  header div .b-menu {
+    display: block;
+  }
+  main .cont-2 .main-2, main .cont-3 .main-3, main .cont-4 .main-4-1, main .cont-5 .main-5 {
+    width: 92%;
+  }
+  footer .footer-cont {
+    width: 92%;
+  }
 }
 /*# sourceMappingURL=index.css.map */

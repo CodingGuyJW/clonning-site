@@ -1,26 +1,17 @@
 // index.js
 // header
 // nav menu 
-const elNav = $('header div nav a');
-const elLang = $('header div .lang li a');
 
-elNav.hover(function(){
-    $(this).css('background','#eee');
-}, function(){
-    $(this).css('background','#fff');
-});
+// burger menu
+(function() {
+    var burgerMenu = document.getElementsByClassName('b-menu')[0];
+    var burgerNav = document.getElementsByClassName('b-nav')[0];
 
-// language menu
-elLang.hover(function(){
-    $(this).css('background','#eee');
-}, function(){
-    $(this).css('background','#fff');
-});
-
-elLang.on('click',function(){
-    elLang.removeClass('active');
-    $(this).addClass('active');
-})
+    burgerMenu.addEventListener('click', function toggleClasses() {
+            this.classList.toggle('open');
+            burgerNav.classList.toggle('open');
+    }, false);
+})();
 
 // main
 const elDownload = $('.main-1');
