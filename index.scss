@@ -897,4 +897,10 @@ footer{
             }
         }
     }
+    footer{
+        .footer-cont{
+            div{flex-direction:column;}
+            .term{flex-direction: column;}
+        }
+    }
 }
