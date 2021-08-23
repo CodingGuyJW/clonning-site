@@ -951,7 +951,7 @@ footer .footer-cont .sns li {
     font-size: 2.3vw;
   }
   main .cont-3 .main-3 .main-3-2 .main-3-2-1 p {
-    font-size: 2.5vw;
+    font-size: 2.7vw;
   }
   main .cont-3 .main-3 .main-3-2 .main-3-2-2 p {
     margin-top: 5vw;
@@ -996,6 +996,103 @@ footer .footer-cont .sns li {
   }
   footer .footer-cont {
     width: 92%;
+  }
+}
+
+@media (max-width: 600px) {
+  main .download {
+    top: 300px;
+  }
+  main .cont-1 h2 {
+    font-size: 5vw;
+  }
+  main .cont-2 .main-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .cont-2 .main-2 .main-2-1 {
+    font-size: 5.5vw;
+  }
+  main .cont-2 .main-2 .main-2-1 small {
+    font-size: 4vw;
+  }
+  main .cont-2 .main-2 .main-2-2 {
+    width: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  main .cont-2 .main-2 .main-2-2 img {
+    position: relative;
+  }
+  main .cont-2 .main-2 .main-2-3 {
+    position: relative;
+    width: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  main .cont-2 .main-2 .main-2-3 p {
+    padding: 0;
+    font-size: 4vw;
+  }
+  main .cont-3 .main-3 h2 {
+    font-size: 5.5vw;
+  }
+  main .cont-3 .main-3 h2 small {
+    font-size: 4vw;
+  }
+  main .cont-3 .main-3 .main-3-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main .cont-3 .main-3 .main-3-1 .transfer-1 {
+    width: 100%;
+    height: auto;
+    background: url(img/section1_2_transfer_01.png) no-repeat 50% 12vw;
+    background-size: 60%;
+  }
+  main .cont-3 .main-3 .main-3-1 p {
+    font-size: 4vw;
+    width: 100%;
+    padding-left: 10vw;
+  }
+  main .cont-3 .main-3 .main-3-1 p .call {
+    font-size: inherit;
+  }
+  main .cont-3 .main-3 .main-3-2 {
+    display: block;
+  }
+  main .cont-3 .main-3 .main-3-2 .main-3-2-1 {
+    width: 70vw;
+    margin: 0 auto;
+  }
+  main .cont-3 .main-3 .main-3-2 .main-3-2-1 p {
+    font-size: 7vw;
+  }
+  main .cont-3 .main-3 .main-3-2 .main-3-2-2 {
+    margin-top: 5vw;
+    width: 100%;
+  }
+  main .cont-3 .main-3 .main-3-2 .main-3-2-2 .main-3-2-2-1 {
+    height: auto;
+  }
+  main .cont-3 .main-3 .main-3-2 .main-3-2-2 p {
+    padding-left: 10vw;
+    font-size: 4vw;
+  }
+  main .cont-5 .main-5 h2 {
+    font-size: 10vw;
+  }
+  main .cont-5 .main-5 .table {
+    display: block;
+  }
+  main .cont-5 .main-5 .table div {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=index.css.map */
