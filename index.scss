@@ -348,7 +348,8 @@ main{
                 }
                 div:nth-of-type(2){
                     position:relative;
-                    width:600px; margin:100px auto;
+                    width:600px; 
+                    margin:100px auto;
                     background:url('img/section1_5_stock_01.png') center center no-repeat;
                     background-size:55%;
                     img{
@@ -862,13 +863,36 @@ footer{
                 }
             }
         }
+        .cont-4{
+            .main-4-1{
+                h2{
+                    font-size:5.5vw;
+                    small{font-size:4vw;}
+                }
+                .main-4-1-cont{
+                    div:nth-of-type(2){
+                        width:300px;
+                        figure{
+                            img{width:78px;}
+                        }
+                    }
+                }
+                p{font-size:5vw;}
+            }
+        }
         .cont-5{
             .main-5{
-                h2{font-size:10vw;
+                h2{
+                    font-size:6vw;
+                    small{font-size:4vw;}
                 }
                 .table{
                     display:block;
-                    div{width:100%;}
+                    div{
+                        width:100%;
+                        h3{font-size:5.7vw;}
+                        p{font-size:4.7vw;}
+                    }
                 }
             }
         }
