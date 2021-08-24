@@ -408,6 +408,7 @@ main{
                             width:178px;
                             margin-left:16px;
                         }
+                        .img-opacity{opacity:0;}
                     }
                 }
             }
@@ -554,7 +555,7 @@ footer{
         }
     }
 }
-
+@media (max-width:1030px){header div nav li a{font-size:1vw;}}
 @media (max-width:1024px){
     //56% -> 76~80%
     header{
@@ -562,7 +563,7 @@ footer{
             width:76%;
             .b-nav{
                 li{
-                    a{font-size:1.3vw;}
+                    a{font-size:1vw;}
                 }
             }
             .lang{
@@ -581,7 +582,7 @@ footer{
         .footer-cont{width:76%;}
     }
 }
-
+// @media (max-width:840px){header div nav li a{font-size:0.2rem;}}
 @media (max-width:768px){
     // burger menu
     @-webkit-keyframes slideInLeft {

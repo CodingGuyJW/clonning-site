@@ -1,8 +1,5 @@
 // index.js
-// header
-
-// nav menu 
-// burger menu
+// nav menu - burger menu
 (function() {
     var burgerMenu = document.getElementsByClassName('b-menu')[0];
     var burgerNav = document.getElementsByClassName('b-nav')[0];
@@ -55,5 +52,19 @@ function handleScroll() {
 
 // scrollimg event function(JS)
 window.addEventListener('scroll', handleScroll);
+
+// opacity change(Jquery)
+function changeOpacity(){
+    const imgs = $('main .cont-4 .main-4-1 .main-4-1-cont div figure img');
+    const fig = $('main .cont-4 .main-4-1 .main-4-1-cont div figure');
+    let idx=1;
+
+    // if(){}
+    // console.log(window.scrollY)
+    console.log(fig.offset().top, window.delta)
+
+};
+
+window.addEventListener('scroll',changeOpacity);
 
 

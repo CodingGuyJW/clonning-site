@@ -581,6 +581,10 @@ main .cont-4 .main-4-1 .main-4-1-cont div:nth-of-type(2) figure img {
   margin-left: 16px;
 }
 
+main .cont-4 .main-4-1 .main-4-1-cont div:nth-of-type(2) figure .img-opacity {
+  opacity: 0;
+}
+
 main .cont-4 .main-4-1 p {
   font-size: 1.5rem;
   margin: 1vw 0;
@@ -785,12 +789,18 @@ footer .footer-cont .sns li {
   }
 }
 
+@media (max-width: 1030px) {
+  header div nav li a {
+    font-size: 1vw;
+  }
+}
+
 @media (max-width: 1024px) {
   header div {
     width: 76%;
   }
   header div .b-nav li a {
-    font-size: 1.3vw;
+    font-size: 1vw;
   }
   header div .lang li a {
     font-size: 1.5vw;
