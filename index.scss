@@ -36,6 +36,16 @@ header{
             display:flex;
             justify-content:space-around;
             font-size:0.8rem;
+            li{
+                a{
+                    cursor: pointer;
+                    border-radius:5px;
+                    padding:10px 7px;
+                }
+                a:hover{
+                    background-color:#f2f4f6;
+                }
+            }
         }
         .lang{
             margin-left:3rem;
@@ -43,8 +53,14 @@ header{
             justify-content:space-around;
             
             li{
-                a{color:#999;}
+                a{
+                    cursor: pointer;
+                    color:#999;
+                    border-radius:5px;
+                    padding:10px 7px;
+                }
                 a.active{color:#000;}
+                a:hover{background-color:#f2f4f6;}
             }
             li:nth-of-type(1)::after{
                 content:'|';
@@ -54,6 +70,18 @@ header{
         }
     }
 }
+
+// move-page animation
+@keyframes up-down{
+    from{
+        transform: translate(-50%,0);
+    }
+    to{
+        transform: translate(-50%,-20px);
+    }
+}
+
+.up-on-scroll{transition: transform 0.7s, opacity 1s;}
 
 main{
     overflow-x: hidden;
@@ -99,7 +127,14 @@ main{
         transform:translateX(-50%);
         text-align: center;
         ul{
-            li{display:none;}
+            display:none;
+            background-color:#f9fafb;
+            margin:10px 0;
+            border-radius:5px;
+            li{
+                border-radius:5px;
+                font-size:1rem;
+                padding:1vw;}
         }
         .btn-dwnld{
             width:178px; height:71px;
@@ -109,6 +144,7 @@ main{
             color:#fff;
             font-size:1.3rem;
             transition:0.5s;
+            cursor: pointer;
         }
         .btn-dwnld:hover{
             background-color:#1b64da;
@@ -121,6 +157,8 @@ main{
         height: 50px;
         transform:translateX(-50%);
         border:none; background:none;
+        cursor: pointer;
+        animation: up-down 1.4s infinite ease-in-out alternate;
     }
     .cont-1{
         height:600px;
@@ -167,7 +205,8 @@ main{
                 width:55%;
                 flex-shrink: 0;
                 position:relative;
-                transform: translate(-15%,-0%);
+                left:-15%;
+                // transform: translate(0,-0%);
                 img:nth-of-type(1){
                     position:absolute;
                     left: 50%; top:50%;
@@ -342,7 +381,7 @@ main{
                     justify-content:space-between;
                     align-items:center;
                     p{
-                        font-size:1.7vw;
+                        font-size:1.5vw;
                         width:auto; height:auto;
                     }
                 }
