@@ -205,6 +205,7 @@ main .download {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   text-align: center;
+  z-index: 9;
 }
 
 main .download ul {

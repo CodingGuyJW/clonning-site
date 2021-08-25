@@ -64,18 +64,34 @@ function changeOpacity(){
     const imgs = $('main .cont-4 .main-4-1 .main-4-1-cont div figure img');
     const fig = $('main .cont-4 .main-4-1 .main-4-1-cont div figure');
     let refVal1 = fig.offset().top - $(window).height();
+    // let opacityValue = 0;
 
-    if( ($(window).scrollTop() - refVal1) > 100 ){
-        imgs.eq(2).animate({opacity:1},500)
-        imgs.eq(4).animate({opacity:1},500)
+    if( ($(window).scrollTop() - refVal1) > 80 ){
+/*         opacityValue =(($(window).scrollTop() - refVal1) - 80) / fig.outerHeight();
+        if(opacityValue > 1) opacityValue = 1;
+        else if(opacityValue < 0) opacityValue = 0;
+        imgs.eq(2).animate({opacity:opacityValue},0);
+        imgs.eq(4).animate({opacity:opacityValue},0); */
+        imgs.eq(2).animate({opacity:1},500);
+        imgs.eq(4).animate({opacity:1},500);
     }
-    if( ($(window).scrollTop() - refVal1) > 200){
-        imgs.eq(1).animate({opacity:1},500)
-        imgs.eq(5).animate({opacity:1},500)
+    if( ($(window).scrollTop() - refVal1) > 160 ){
+/*         opacityValue =(($(window).scrollTop() - refVal1) - 160) / fig.outerHeight();
+        if(opacityValue > 1) opacityValue = 1;
+        else if(opacityValue < 0) opacityValue = 0; 
+        imgs.eq(1).animate({opacity:opacityValue},0); 
+        imgs.eq(5).animate({opacity:opacityValue},0); */
+        imgs.eq(1).animate({opacity:1},500);
+        imgs.eq(5).animate({opacity:1},500);
     }
-    if( ($(window).scrollTop() - refVal1) > 300){
-        imgs.eq(0).animate({opacity:1},500)
-        imgs.eq(6).animate({opacity:1},500)
+    if( ($(window).scrollTop() - refVal1) > 240 ){
+/*         opacityValue =(($(window).scrollTop() - refVal1) - 240) / fig.outerHeight();
+        if(opacityValue > 1) opacityValue = 1;
+        else if(opacityValue < 0) opacityValue = 0;
+        imgs.eq(0).animate({opacity:opacityValue},0);
+        imgs.eq(6).animate({opacity:opacityValue},0); */
+        imgs.eq(0).animate({opacity:1},500);
+        imgs.eq(6).animate({opacity:1},500);
     }
 
 };
@@ -83,9 +99,9 @@ window.addEventListener('scroll',changeOpacity);
 
 // image width control
 const bgimg = $('main .cont-4 .main-4-2');
-let refval2 = bgimg.offset().top - $(window).height();
 
 function imageWidth(){
+    let refval2 = bgimg.offset().top - $(window).height();
     if($(window).scrollTop() - refval2 > 200){
         bgimg.width('70%');
     }
