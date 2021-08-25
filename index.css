@@ -217,7 +217,23 @@ main .download ul {
 main .download ul li {
   border-radius: 5px;
   font-size: 1rem;
+  padding: 10px;
+}
+
+main .download ul li a {
+  display: block;
+  border-radius: 3px;
   padding: 1vw;
+  padding-top: 0.5vw;
+  cursor: pointer;
+}
+
+main .download ul li a.active {
+  background: #e5e8eb;
+}
+
+main .download ul li:first-of-type {
+  padding-bottom: 0;
 }
 
 main .download .btn-dwnld {

@@ -22,6 +22,13 @@ $('html').on("click", function(evt){
         $('.download ul').stop().slideUp(10);
     }
 })
+// download-button menu(jquery)
+const storeMenu = $('main .download ul li');
+
+storeMenu.hover(function(){
+    storeMenu.find('A').removeClass('active');
+    $(this).find('A').addClass('active');
+})
 
 // move-page-button(jquery)
 $('main .move-page svg').on("click",function(){

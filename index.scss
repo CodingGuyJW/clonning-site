@@ -134,7 +134,17 @@ main{
             li{
                 border-radius:5px;
                 font-size:1rem;
-                padding:1vw;}
+                padding:10px;
+                a{
+                    display: block;
+                    border-radius:3px;
+                    padding:1vw;
+                    padding-top:0.5vw;
+                    cursor: pointer;
+                }
+                a.active{background:#e5e8eb;}
+            }
+            li:first-of-type{padding-bottom:0;}
         }
         .btn-dwnld{
             width:178px; height:71px;
