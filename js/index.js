@@ -48,7 +48,6 @@ function handleScroll() {
     elems.forEach(elem => {
         if (isElementUnderBottom(elem, -20)) {
             elem.style.opacity = "0";
-            //elem.style.paddingTop = '70px';
             elem.style.transform = 'translateY(70px)';
         } else {
             elem.style.opacity = "1";
@@ -88,9 +87,6 @@ let refval2 = bgimg.offset().top - $(window).height();
 
 function imageWidth(){
     if($(window).scrollTop() - refval2 > 200){
-        //console.log(bgimg)
-        //console.log(refval2)
-        //console.log($(window).scrollTop() - refval2) 
         bgimg.width('70%');
     }
     if($(window).scrollTop() - refval2 > 300){ 
