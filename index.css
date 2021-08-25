@@ -1020,6 +1020,9 @@ footer .footer-cont .sns li {
   main .cont-2 .main-2 .main-2-1 small {
     font-size: 2.5vw;
   }
+  main .cont-2 .main-2 .main-2-2 {
+    left: 0;
+  }
   main .cont-2 .main-2 .main-2-3 p {
     font-size: 1.8vw;
   }
