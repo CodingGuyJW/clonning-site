@@ -64,34 +64,34 @@ function changeOpacity(){
     const imgs = $('main .cont-4 .main-4-1 .main-4-1-cont div figure img');
     const fig = $('main .cont-4 .main-4-1 .main-4-1-cont div figure');
     let refVal1 = fig.offset().top - $(window).height();
-    let opacityValue = 0, x = 80;
-    opacityValue = (($(window).scrollTop() - refVal1) - x) / fig.outerHeight();
-        if(opacityValue > 1) opacityValue = 1;
-        else if(opacityValue < 0) opacityValue = 0;
-    console.log(opacityValue)
-    if( ($(window).scrollTop() - refVal1) > 80 ){
+    // let opacityValue = 0, x = 80;
+    // opacityValue = (($(window).scrollTop() - refVal1) - x) / fig.outerHeight();
+        // if(opacityValue > 1) opacityValue = 1;
+        // else if(opacityValue < 0) opacityValue = 0;
+    // console.log(opacityValue)
+    if( ($(window).scrollTop() - refVal1) > x ){
 
-        imgs.eq(2).animate({opacity:opacityValue},0);
-        imgs.eq(4).animate({opacity:opacityValue},0); 
+        // imgs.eq(2).animate({opacity:opacityValue},0);
+        // imgs.eq(4).animate({opacity:opacityValue},0); 
 
-        //imgs.eq(2).animate({opacity:1},500);
-        //imgs.eq(4).animate({opacity:1},500);
+        imgs.eq(2).animate({opacity:1},500);
+        imgs.eq(4).animate({opacity:1},500);
     }
-    if( ($(window).scrollTop() - refVal1) > 160 ){
+    if( ($(window).scrollTop() - refVal1) > x+80 ){
+        x += 80;
+        // imgs.eq(1).animate({opacity:opacityValue},0); 
+        // imgs.eq(5).animate({opacity:opacityValue},0); 
 
-        imgs.eq(1).animate({opacity:opacityValue},0); 
-        imgs.eq(5).animate({opacity:opacityValue},0); 
-
-        //imgs.eq(1).animate({opacity:1},500);
-        //imgs.eq(5).animate({opacity:1},500);
+        imgs.eq(1).animate({opacity:1},500);
+        imgs.eq(5).animate({opacity:1},500);
     }
     if( ($(window).scrollTop() - refVal1) > 240 ){
 
-        imgs.eq(0).animate({opacity:opacityValue},0);
-        imgs.eq(6).animate({opacity:opacityValue},0); 
+        // imgs.eq(0).animate({opacity:opacityValue},0);
+        // imgs.eq(6).animate({opacity:opacityValue},0); 
 
-        //imgs.eq(0).animate({opacity:1},500);
-        //imgs.eq(6).animate({opacity:1},500);
+        imgs.eq(0).animate({opacity:1},500);
+        imgs.eq(6).animate({opacity:1},500);
     }
 
 };
