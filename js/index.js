@@ -57,14 +57,59 @@ window.addEventListener('scroll', handleScroll);
 function changeOpacity(){
     const imgs = $('main .cont-4 .main-4-1 .main-4-1-cont div figure img');
     const fig = $('main .cont-4 .main-4-1 .main-4-1-cont div figure');
-    let idx=1;
+    let refVal1 = fig.offset().top - $(window).height();
 
-    // if(){}
-    // console.log(window.scrollY)
-    console.log(fig.offset().top, window.delta)
+    if( ($(window).scrollTop() - refVal1) > 100 ){
+        imgs.eq(2).animate({opacity:1},500)
+        imgs.eq(4).animate({opacity:1},500)
+    }
+    if( ($(window).scrollTop() - refVal1) > 200){
+        imgs.eq(1).animate({opacity:1},500)
+        imgs.eq(5).animate({opacity:1},500)
+    }
+    if( ($(window).scrollTop() - refVal1) > 300){
+        imgs.eq(0).animate({opacity:1},500)
+        imgs.eq(6).animate({opacity:1},500)
+    }
 
 };
-
 window.addEventListener('scroll',changeOpacity);
+
+// image width control
+const bgimg = $('main .cont-4 .main-4-2');
+let refval2 = bgimg.offset().top - $(window).height();
+
+function imageWidth(){
+    if($(window).scrollTop() - refval2 > 200){
+        //console.log(bgimg)
+        //console.log(refval2)
+        //console.log($(window).scrollTop() - refval2) 
+        bgimg.width('70%');
+    }
+    if($(window).scrollTop() - refval2 > 300){ 
+        bgimg.width('73%');
+    }
+    if($(window).scrollTop() - refval2 > 400){ 
+        bgimg.width('76%');
+    }
+    if($(window).scrollTop() - refval2 > 500){ 
+        bgimg.width('80%');
+    }
+    if($(window).scrollTop() - refval2 > 600){ 
+        bgimg.width('85%');
+    }
+    if($(window).scrollTop() - refval2 > 700){ 
+        bgimg.width('90%');
+    }
+    if($(window).scrollTop() - refval2 > 800){ 
+        bgimg.width('95%');
+    }
+    if($(window).scrollTop() - refval2 > 900){ 
+        bgimg.width('100%');
+    }
+}
+window.addEventListener('scroll',imageWidth)
+
+
 
 

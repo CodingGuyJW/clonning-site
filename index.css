@@ -593,7 +593,8 @@ main .cont-4 .main-4-1 p {
 }
 
 main .cont-4 .main-4-2 {
-  width: 100%;
+  margin: 0 auto;
+  width: 67%;
   height: 53vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -606,6 +607,8 @@ main .cont-4 .main-4-2 {
           align-items: center;
   background: url("img/section2_4_big.jpg") center center no-repeat;
   background-size: cover;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 main .cont-4 .main-4-2 h2 {
@@ -1092,6 +1095,7 @@ footer .footer-cont .sns li {
     width: 100%;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
+    left: 0;
   }
   main .cont-2 .main-2 .main-2-2 img {
     position: relative;

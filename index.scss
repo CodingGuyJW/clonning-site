@@ -420,13 +420,15 @@ main{
             }
         }
         .main-4-2{
-            width:100%;
+            margin:0 auto;
+            width:67%;
             height:53vw;
             display: flex;
             justify-content: center;
             align-items: center;
             background:url('img/section2_4_big.jpg') center center no-repeat;
             background-size: cover;
+            transition:0.2s;
             h2{
                 font-size:4.5vw;
                 color:#fff;
@@ -850,6 +852,7 @@ footer{
                     img{position:relative;}
                     width:100%;
                     transform:translate(0,0);
+                    left:0;
                 }
                 .main-2-3{
                     position:relative;
